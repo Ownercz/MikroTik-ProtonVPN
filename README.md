@@ -25,7 +25,6 @@ Guide howto route traffic using ProtonVPN
 /ip firewall address-list add address=192.168.20.100 list=protonvpn-only-cz
 /ip firewall address-list
 add address=192.168.0.0/16 list=no-vpn
-add address=176.102.65.176 list=no-vpn
 /ip firewall mangle
 add action=mark-connection chain=forward dst-address-list=!no-vpn \
     new-connection-mark=nat-to-protonvpn-cz passthrough=yes src-address-list=\
