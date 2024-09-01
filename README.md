@@ -20,7 +20,7 @@ Guide howto route traffic using ProtonVPN
 /ip ipsec identity add auth-method=eap certificate=ProtonVPN_ike_root.der_0 eap-methods=eap-mschapv2 generate-policy=port-override mode-config=ProtonVPN peer=ProtonVPN policy-template-group=ProtonVPN username=USER password=PASS 
 ```
 
-### Routing vvia address-list, conn mark and mangle
+### Routing via address-list, conn mark and mangle
 ``` 
 /ip firewall address-list add address=192.168.20.100 list=protonvpn-only-cz
 /ip firewall address-list
